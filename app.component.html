@@ -1,1 +1,12 @@
 <div>hello world</div>
+
+<div>Todos:</div>
+
+<ul>
+  <li *ngFor="let todo of todos">
+    <h5>Todo Id: {{ todo.id }}</h5>
+    <h6>User Id: {{ todo.userId }}</h6>
+    <p>Todo Name: {{ todo.title }}</p>
+    <p>Completed: {{ todo.completed }}</p>
+  </li>
+</ul>
